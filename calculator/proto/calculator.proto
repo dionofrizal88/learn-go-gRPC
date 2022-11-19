@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+package calculator;
+
+option go_package = "github.com/dionofrizal88/go-grpc/calculator/proto";
+
+message CalculatorRequest{
+    int32 operan_one = 1;
+    int32 operan_two = 2;
+}
+
+message CalculatorResponse{
+    int32 result = 1;
+}
+
+message FactorResponse{
+    string result = 1;
+}
+
+service CalculatorService{
+    rpc Sum(CalculatorRequest) returns (CalculatorResponse);
+    rpc SumFactor(CalculatorRequest) returns (stream FactorResponse);
+}
