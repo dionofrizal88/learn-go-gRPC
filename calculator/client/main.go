@@ -21,7 +21,8 @@ func main(){
 
 	c := pb.NewCalculatorServiceClient(conn)
 	// twoSum(c)
-	sumFactor(c)
+	// sumFactor(c)
+	average(c)
 }	
 
 // var addr string = "0.0.0.0:50051"
