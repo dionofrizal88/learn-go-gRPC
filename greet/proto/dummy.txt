@@ -15,6 +15,7 @@ service DummyService{
 /*
 jalanain file proto
 I = menemikan import file proto
+export GO111MODULE="on" 
 Di mac untuk menjalankan make menggunakan = $ make -f MakeFile <perintah>
 
 $ export PATH="$PATH:$(go env GOPATH)/bin"
